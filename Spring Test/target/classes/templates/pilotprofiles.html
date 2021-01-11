@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Apollo Soyuz Space Program</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link th:href="@{/css/style.css}" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Russo+One&display=swap" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+            <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <img class="navbar-brand" id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Apollo-Soyuz_Test_Project_patch.svg/1200px-Apollo-Soyuz_Test_Project_patch.svg.png">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a th:href="@{index}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a th:href="@{apollosoyuzhistory}">Apollo-Soyuz History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a th:href="@{launchvehicles}">Launch Vehicles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="active" th:href="@{pilotprofiles}">Pilot Profiles</a>
+                        </li>
+                        <li class="nav-item">
+                        <a th:href="@{registration}">Registration</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="searchBar">
+                                    <input type="text" placeholder="search...">
+                                <img src="https://openclipart.org/image/800px/svg_to_png/213239/Search-icon.png"><a id="cart" href="#"><img src="http://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg"></a>          
+                            </div>
+                        </li>
+                    </ul>
+                </div>    
+            </nav>
+            <div id="pilotProfiles" class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <h5>Thomas P. Stafford</h5>
+                        <p>Thomas Patten Stafford (born September 17, 1930) is an American former Air Force officer, 
+                            test pilot, and NASA astronaut, and one of 24 people who flew to the Moon. He also served 
+                            as Chief of the Astronaut Office from 1969 to 1971.In 1975, Stafford was the commander of 
+                            the Apollo-Soyuz Test Project flight, the first joint U.S.-Soviet space mission. Stafford 
+                            was a brigadier general at the time of the mission, becoming the first general officer to 
+                            fly in space, as well as the first member of his Naval Academy class to pin on the first, 
+                            second, and third stars of a general officer. He made six rendezvous in space and logged 
+                            507 hours of space flight. He has flown over 120 different types of fixed wing and rotary 
+                            aircraft and three different types of spacecraft. <a href="https://en.wikipedia.org/wiki/Thomas_P._Stafford">[1]</a></p>
+                        
+                        </div>
+                        <div class="col-4">
+                        <img class="img-fluid w-50 rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Thomas_Stafford.jpg/800px-Thomas_Stafford.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="pilotProfiles" class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <h5>Donald K. Slayton</h5>
+                        <p>Donald Kent "Deke" Slayton (March 1, 1924 – June 13, 1993) was a United States Air Force 
+                            pilot, aeronautical engineer, and test pilot who was selected as one of the original NASA 
+                            Mercury Seven astronauts. He went on to become NASA's first Chief of the Astronaut Office 
+                            and Director of Flight Crew Operations, responsible for NASA crew assignments.  In March 
+                            1972, he was medically cleared to fly and was the docking module pilot of the 1975 Apollo–Soyuz 
+                            Test Project (ASTP). He continued to work at NASA until 1982, and helped develop the Space Shuttle.<a href="https://en.wikipedia.org/wiki/Deke_Slayton">[2]</a>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid w-50 rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Slayton.jpg/800px-Slayton.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="pilotProfiles" class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <h5>Vance D. Brand</h5>
+                        <p>Vance DeVoe Brand (born May 9, 1931) is an American former naval officer and aviator, aeronautical 
+                            engineer, test pilot, and NASA astronaut. He served as command module pilot during the first U.S.-Soviet 
+                            joint spaceflight in 1975, and as commander of three Space Shuttle missions. His flight experience 
+                            includes 9,669 flying hours, which includes 8,089 hours in jets, 391 hours in helicopters, 746 hours 
+                            in spacecraft, and checkout in more than 30 types of military aircraft. <a href="https://en.wikipedia.org/wiki/Vance_D._Brand">[3]</a>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid w-50 rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/VanceDBrand.jpg/800px-VanceDBrand.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="pilotProfiles" class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <h5>Aleksey A. Leonov</h5>
+                        <p>Alexei Arkhipovich Leonov (30 May 1934 – 11 October 2019) was a Soviet and Russian cosmonaut, 
+                            Air Force major general, writer, and artist. On 18 March 1965, he became the first person to 
+                            conduct a spacewalk, exiting the capsule during the Voskhod 2 mission for 12 minutes and 9 seconds. 
+                            He was also selected to be the first Soviet person to land on the moon, however the project was 
+                            cancelled. In July 1975, Leonov commanded the Soyuz capsule in the Soyuz–Apollo mission, which 
+                            docked in space for two days with an American Apollo capsule. <a href="https://en.wikipedia.org/wiki/Alexei_Leonov">[4]</a>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid w-50 rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Aleksey_Leonov_ASTP_-_cropped.jpg/800px-Aleksey_Leonov_ASTP_-_cropped.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="pilotProfiles" class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <h5>Valeriy N. Kubasov</h5>
+                        <p>Valeri Nikolayevich Kubasov (Russian: Вале́рий Никола́евич Куба́сов; 7 January 1935 – 19 February 2014) 
+                            was a Soviet/Russian cosmonaut who flew on two missions in the Soyuz programme as a flight engineer: 
+                            Soyuz 6 and Soyuz 19 (the Apollo–Soyuz mission), and commanded Soyuz 36 in the Intercosmos programme. 
+                            On 21 July 1975, the Soyuz 7K-TM module used for ASTP landed in Kazakhstan at 5:51 p.m. and Kubasov 
+                            was the first to exit the craft. Kubasov performed the first welding experiments in space, along with 
+                            Georgy Shonin. Kubasov was also involved in the development of the Mir space station. He retired from 
+                            the Russian space program in November 1993 and was later deputy director of RKK Energia. Kubasov 
+                            evaded death twice during his space career. He was part of the crew that was originally intended to 
+                            fly Soyuz 2, which was found to have the same faulty parachute sensor that resulted in Vladimir 
+                            Komarov's death on Soyuz 1 and was later launched without a crew. Later, he was grounded for medical 
+                            reasons before the Soyuz 11 flight, which killed the crew when the capsule was accidentally 
+                            depressurised by a faulty valve.  <a href="https://en.wikipedia.org/wiki/Valeri_Kubasov">[5]</a>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid w-50 rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Valeriy_N._Kubasov_ASTP_portrait_-_cropped.jpg/800px-Valeriy_N._Kubasov_ASTP_portrait_-_cropped.jpg">
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

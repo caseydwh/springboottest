@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:form="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link th:href="@{/css/style.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img class="navbar-brand" id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Apollo-Soyuz_Test_Project_patch.svg/1200px-Apollo-Soyuz_Test_Project_patch.svg.png">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a th:href="@{index}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a th:href="@{apollosoyuzhistory}">Apollo-Soyuz History</a>
+            </li>
+            <li class="nav-item">
+                <a th:href="@{launchvehicles}">Launch Vehicles</a>
+            </li>
+            <li class="nav-item">
+                <a th:href="@{pilotprofiles}">Pilot Profiles</a>
+            </li>
+            <li class="nav-item">
+                <a class="active" th:href="@{registration}">Registration</a>
+            </li>
+            <li class="nav-item">
+                <div class="searchBar">
+                    <input type="text" placeholder="search...">
+                    <img src="https://openclipart.org/image/800px/svg_to_png/213239/Search-icon.png"><a id="cart" href="#"><img src="http://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg"></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div id="history" class="container">
+    <div class="row">
+        <div class="col-12">
+            <h5>Registration Page</h5>
+            <form>
+                <div align="center">
+                    <h1>User Registration Form:</h1>
+                    <a href="/register">Click here to Register!</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

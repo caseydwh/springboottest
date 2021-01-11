@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Apollo Soyuz Space Program</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link th:href="@{/css/style.css}" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Russo+One&display=swap" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <img class="navbar-brand" id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Apollo-Soyuz_Test_Project_patch.svg/1200px-Apollo-Soyuz_Test_Project_patch.svg.png">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a th:href="@{index}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a th:href="@{apollosoyuzhistory}">Apollo-Soyuz History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="active" th:href="@{launchvehicles}">Launch Vehicles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a th:href="@{pilotprofiles}">Pilot Profiles</a>
+                    </li>
+                        <li class="nav-item">
+                        <a th:href="@{registration}">Registration</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="searchBar">
+                                <input type="text" placeholder="search...">
+                                <img src="https://openclipart.org/image/800px/svg_to_png/213239/Search-icon.png"><a id="cart" href="#"><img src="http://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg"></a>             
+                            </div>
+                        </li>
+                    </ul>
+                </div>    
+                </nav>
+                <div id="launchVehicles" class="container">
+                    <div class="row">
+                        <div class="col-8">
+                            <h5>American Launch Vehicle - Saturn IB</h5>
+                            <p>The Saturn IB (pronounced "Saturn one bee", also known as the uprated Saturn I) was an 
+                                American launch vehicle commissioned by the National Aeronautics and Space Administration 
+                                (NASA) for the Apollo program. It replaced the S-IV second stage of the Saturn I with the 
+                                much more powerful S-IVB, able to launch a partially fueled Apollo command and service module 
+                                (CSM) or a fully fueled Apollo Lunar Module (LM) into low Earth orbit for early flight tests 
+                                before the larger Saturn V needed for lunar flight was ready. <a href="https://en.wikipedia.org/wiki/Saturn_IB">[1]</a>
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid w-50 rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/ASTP_Saturn_IB.jpg/800px-ASTP_Saturn_IB.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div id="launchVehicles" class="container">
+                    <div class="row">
+                        <div class="col-8">
+                            <h5>Soviet Launch Vehicles - Soyuz-U</h5>
+                            <p>The Soyuz-U launch vehicle was an improved version of the original Soyuz rocket. Soyuz-U was part of 
+                                the R-7 family of rockets based on the R-7 Semyorka missile. Members of this rocket family were 
+                                designed by the TsSKB design bureau and constructed at the Progress factory in Samara, Russia (now 
+                                a united company, TsSKB-Progress). The first Soyuz-U flight took place on 18 May 1973, carrying as 
+                                its payload Kosmos 559, a Zenit military surveillance satellite.[6] The final flight of a Soyuz-U 
+                                rocket took place on 22 February 2017, carrying Progress MS-05 to the International Space Station. 
+                                Soyuz-U was in use continuously for almost 44 years. Production of R-7 derived launch vehicles 
+                                peaked in the late 1970s-early 1980s at 55–60 a year. Soyuz-U held the world record of highest 
+                                launch rate in a year in 1979 with 47 flights. Over its operational lifetime, the Soyuz-U variant 
+                                flew a total of 786 missions, another world record. Soyuz-U has also been one of the most reliable 
+                                launchers, with a success rate of 97.3%.  <a href="https://en.wikipedia.org/wiki/Soyuz-U">[2]</a>
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid w-50 rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Soyuz_18_booster.jpg/800px-Soyuz_18_booster.jpg">
+                        </div>
+                    </div>
+                </div>
+    </body>
+</html>
